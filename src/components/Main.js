@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import pic01 from '../images/pic01.jpg'
-import pic02 from '../images/pic02.jpg'
-import pic03 from '../images/pic03.jpg'
+import PropTypes from "prop-types";
+import React from "react";
+import pic01 from "../images/pic01.jpg";
+import pic02 from "../images/pic02.jpg";
+import pic03 from "../images/pic03.jpg";
 
 class Main extends React.Component {
   render() {
@@ -10,59 +10,47 @@ class Main extends React.Component {
       <div
         className="close"
         onClick={() => {
-          this.props.onCloseArticle()
+          this.props.onCloseArticle();
         }}
       ></div>
-    )
+    );
 
     return (
       <div
         ref={this.props.setWrapperRef}
         id="main"
-        style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
+        style={this.props.timeout ? { display: "flex" } : { display: "none" }}
       >
         <article
           id="intro"
-          className={`${this.props.article === 'intro' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "intro" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
-          <h2 className="major">Intro</h2>
+          <h2 className="major">About Zach</h2>
           <span className="image main">
             <img src={pic01} alt="" />
           </span>
           <p>
-            Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin
-            aliquam facilisis ante interdum congue. Integer mollis, nisl amet
-            convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
-            magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas.
-            By the way, check out my <a href="#work">awesome work</a>.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
-            libero eu nibh porttitor fermentum. Nullam venenatis erat id
-            vehicula viverra. Nunc ultrices eros ut ultricies condimentum.
-            Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae
-            dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in
-            lectus. Pellentesque habitant morbi tristique senectus et netus et
-            malesuada fames ac turpis egestas. In non lorem sit amet elit
-            placerat maximus. Pellentesque aliquam maximus risus, vel sed
-            vehicula.
+            Zach is currently a student at Brigham Young University. He applied
+            to the Information Systems Program in the Marriott School of
+            Business in June 2020. He works as a full-stack developer for the
+            Creative Works Department and enjoys learning C#, React, ASP.NET
+            core MVC, and Javascript. Check out some of his work
+            <a href="#work"> here!</a>.
           </p>
           {close}
         </article>
 
         <article
           id="work"
-          className={`${this.props.article === 'work' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "work" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
-          <h2 className="major">Work</h2>
+          <h2 className="major">Portfolio</h2>
           <span className="image main">
             <img src={pic02} alt="" />
           </span>
@@ -86,23 +74,30 @@ class Main extends React.Component {
 
         <article
           id="about"
-          className={`${this.props.article === 'about' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "about" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">About</h2>
           <span className="image main">
             <img src={pic03} alt="" />
           </span>
           <p>
-            Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent
-            eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam
-            erat volutpat. Praesent urna nisi, fringila lorem et vehicula
-            lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.
-            Aliquam libero et malesuada fames ac ante ipsum primis in faucibus.
-            Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit
-            amet.
+            Zach is currently a student at Brigham Young University. He was born
+            and raised in the small town of Elko, Nevada. He graduated in 2015
+            as President of the Elko High Chapter of Honor Society, later
+            attending Brigham Young University- Idaho. Zach also served as a
+            full-time representative for the Church of Jesus Christ of
+            Latter-day Saints in Italy, Rome and is fluent in Italian.
+          </p>
+          <p>
+            After his mission, Zach transfered to Brigham Young University-
+            Provo and applied to the Information Systems Program in the Marriott
+            School of Business in June 2020. Zach loves rock climbing, the
+            outdoors, and reading. He works as a full-stack developer for the
+            Creative Works Department. Check out some of his personal work
+            <a href="#work"> here!</a>.
           </p>
           {close}
         </article>
@@ -110,10 +105,10 @@ class Main extends React.Component {
         {/* where the contact part of page starts */}
         <article
           id="contact"
-          className={`${this.props.article === 'contact' ? 'active' : ''} ${
-            this.props.articleTimeout ? 'timeout' : ''
+          className={`${this.props.article === "contact" ? "active" : ""} ${
+            this.props.articleTimeout ? "timeout" : ""
           }`}
-          style={{ display: 'none' }}
+          style={{ display: "none" }}
         >
           <h2 className="major">Contact</h2>
           <form method="post" action="#">
@@ -141,25 +136,20 @@ class Main extends React.Component {
           <ul className="icons">
             <li>
               <a
-                href="https://twitter.com/HuntaroSan"
-                className="icon fa-twitter"
+                href="https://linkedin.com/in/zachary-daniels"
+                className="icon fa-linkedin"
               >
-                <span className="label">Twitter</span>
+                <span className="label">LinkedIn</span>
               </a>
             </li>
-            <li>
-              <a href="https://codebushi.com" className="icon fa-facebook">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
+            {/* <li>
               <a href="https://codebushi.com" className="icon fa-instagram">
                 <span className="label">Instagram</span>
               </a>
-            </li>
+            </li> */}
             <li>
               <a
-                href="https://github.com/codebushi/gatsby-starter-dimension"
+                href="https://github.com/DanielsCode9"
                 className="icon fa-github"
               >
                 <span className="label">GitHub</span>
@@ -169,7 +159,7 @@ class Main extends React.Component {
           {close}
         </article>
       </div>
-    )
+    );
   }
 }
 
@@ -180,6 +170,6 @@ Main.propTypes = {
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
   setWrapperRef: PropTypes.func.isRequired,
-}
+};
 
-export default Main
+export default Main;
